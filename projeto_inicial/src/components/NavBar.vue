@@ -1,9 +1,9 @@
 <template>
     <div id="nav">
-        <router-link to="/">
+        <router-link id="logo-url" to="/">
             <img :src="logo" :alt="alt" id="logo">
         </router-link>
-        <router-link to="/">Home</router-link> |
+        <router-link to="/">Home</router-link>
         <router-link to="/pedidos">Pedidos</router-link>
     </div>
 </template>
@@ -15,7 +15,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     #nav {
         background-color: #222;
         border-bottom: 4 px solid #111;
@@ -25,7 +25,7 @@
         align-items: center;
     }
 
-    #logo-url {
+    #nav #logo-url {
         margin: auto;
         margin-left: 0;
     }
@@ -36,7 +36,7 @@
     }
 
     #nav a {
-        color: FCBA03;
+        color: #FCBA03;
         text-decoration: none;
         margin: 12px;
         transition: .5s;
